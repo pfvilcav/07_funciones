@@ -11,16 +11,19 @@ int SerieFibonacci(int x) {
         SUMA=SUMA+RESULTADO;
         cout<<RESULTADO<<" ";
     }
+    cout<<endl<<endl;
     return SUMA;
 }
 
 void CalcularSuma(int suma) {
-    cout <<"LA SUMA ES:"<<suma<<endl;
+    cout <<"LA SUMA ES: "<<suma<<endl;
 }
 
 int main() {
     int num, suma;
+    cout<<"Ingrese la cantidad de terminos: "<<endl;
     cin>>num;
+    cout<<endl;
     suma=SerieFibonacci(num);
     CalcularSuma(suma);
     return 0;
