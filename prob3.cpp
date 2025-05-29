@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int fibonacci(int x) {
+int SerieFibonacci(int x) {
     int RESULTADO=0, B=1, C, SUMA=0;
     cout<<"LA SERIE ES: ";
     for(int i=0; i<x; i++) {
@@ -11,13 +11,17 @@ int fibonacci(int x) {
         SUMA=SUMA+RESULTADO;
         cout<<RESULTADO<<" ";
     }
-    cout<<"LA SUMA ES: "<<SUMA;
-    return 1;
+    return SUMA;
+}
+
+void CalcularSuma(int suma) {
+    cout <<"LA SUMA ES:"<<suma<<endl;
 }
 
 int main() {
-    int num;
+    int num, suma;
     cin>>num;
-    fibonacci(num);
+    suma=SerieFibonacci(num);
+    CalcularSuma(suma);
     return 0;
 }
