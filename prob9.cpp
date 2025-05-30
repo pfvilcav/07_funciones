@@ -27,6 +27,11 @@ int main() {
     int n;
     cout<<"Ingrese la cantidad de terminos de la serie: ";
     cin>>n;
-    cout<<"El resultado de la serie es: "<<endl<<suma(n);
+    if (n>0) {
+        cout<<"El resultado de la serie es: "<<endl<<suma(n);
+    }
+    else {
+        cout<<"El valor ingresado no es valido. Debio ingresar un valor mayor que 0...";
+    }
     return 0;
 }
