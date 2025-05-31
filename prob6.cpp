@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int primo(int n) {
+bool esPrimo(int n) {
     for (int i=2; i*i<=n; i++) {
         if (n%i==0) {
             return 0;
@@ -15,15 +15,15 @@ int main() {
     cout<<"Ingrese el numero a verificar si es primo."<<endl;
     cin>>NUM;
     if (NUM>1) {
-        if (primo(NUM)) {
-           cout<<"Es primo.";
+        if (esPrimo(NUM)) {
+           cout<<"El numero "<<NUM<<" es primo.";
         }
         else {
-           cout<<"No es primo.";
+           cout<<"El numero "<<NUM<<" no es primo.";
         }
     }
     else {
-        cout<<"El valor a ingresar debe ser positivo y distinto de uno.";
+        cout<<"El valor a ingresar debe ser mayor que uno.";
     }
     return 0;
 }
