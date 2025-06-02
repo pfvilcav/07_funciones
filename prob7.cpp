@@ -19,11 +19,17 @@ int main() {
     }
     cout<<"en:"<<endl;
     cin>>n;
-    if (m>n) {
-        cout<<"es igual a:"<<endl<<factorial(m)/(factorial(n)*factorial(m-n));
+    if (m>=n) {
+        cout<<"La operacion queda asi: "<<endl;
+        cout<<endl;
+        cout<<"    "<<m<<"!"<<endl;
+        cout<<"----------"<<endl;
+        cout<<n<<"!"<<"("<<m<<" - "<<n<<")"<<"!"<<endl;
+        cout<<endl;
+        cout<<"y es igual a:"<<endl<<factorial(m)/(factorial(n)*factorial(m-n));
     }
     else {
-        cout<<"El primer numero debe ser mayor que el segundo...";
+        cout<<"El primer numero debe ser mayor o igual al segundo...";
     }
     return 0;
 }
