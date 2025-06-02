@@ -16,11 +16,16 @@ int main() {
     int NUM;
     cout<<"Ingrese el numero a verificar si es perfecto:"<<endl;
     cin>>NUM;
-    if (esPerfecto(NUM)==NUM) {
-        cout<<"El numero es perfecto.";
+    if (NUM>1) {
+        if (esPerfecto(NUM)==NUM) {
+            cout<<"El numero es perfecto.";
+        }
+        else {
+            cout<<"El numero no es perfecto.";
+        }
     }
     else {
-        cout<<"El numero no es perfecto.";
+        cout<<"Debe ingresar un numero mayor que uno...";
     }
     return 0;
 }
