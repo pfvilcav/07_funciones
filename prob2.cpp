@@ -3,7 +3,7 @@ using namespace std;
 
 int divYres(int dividendo, int divisor) {
     int cociente=0, res;
-    for (int i=1; dividendo-divisor>=0; i++) {
+    while (dividendo-divisor>=0) {
         res=dividendo-divisor;
         cociente++;
         dividendo=res;
