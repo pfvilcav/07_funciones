@@ -14,7 +14,7 @@ int divYres(int dividendo, int divisor) {
 
 
 int main() {
-    int NUM1, NUM2, MAYOR;
+    int NUM1, NUM2, MAYOR, MENOR;
     cout<<"Ingrese un numero: ";
     cin>>NUM1;
     if (NUM1<=0) {
@@ -29,11 +29,14 @@ int main() {
     }
     if( NUM1>NUM2) {
         MAYOR=NUM1;
+        MENOR=NUM2;
     }
     else {
         MAYOR=NUM2;
+        MENOR=NUM1;
     }
+    cout<<"Se elegira al mayor como dividendo y el menor como divisor: "<<endl<<MAYOR<<"/"<<MENOR<<endl;
     cout<<"El residuo y el cociente, respectivamente, son los siguientes: "<<endl;
-    cout<<divYres(MAYOR, NUM2);
+    cout<<divYres(MAYOR, MENOR);
     return 0;
 }
